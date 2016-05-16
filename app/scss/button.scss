@@ -8,6 +8,7 @@ $borde: calc(#{$tamano} * .15);
   height: $tamano;
   border-radius: 50%;
   display: inline-block;
+  opacity: .6;
 
   &[color="verde"] {
     background-color: $verde;
