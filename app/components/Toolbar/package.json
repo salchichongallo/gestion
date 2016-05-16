@@ -1,0 +1,7 @@
+{
+  "name": "Toolbar",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Toolbar.jsx",
+  "description": "Toolbar para algunas views"
+}

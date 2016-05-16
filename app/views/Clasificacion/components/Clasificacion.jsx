@@ -1,0 +1,30 @@
+import React from 'react';
+import { Link } from 'react-router';
+
+import Basura from '../../../components/Basura';
+
+import clasificaciones from './clasificaciones';
+
+import earth from '../../../resources/svg/earth.svg';
+import s from './Clasificacion.scss';
+
+class Clasificacion extends React.Component {
+  render() {
+    return (
+      <div className={s.root}>
+
+        <h1>¡Que triste!</h1>
+
+        {
+         clasificaciones.map(clasificacion => {
+          return <Basura key={clasificacion.color} color={clasificacion.color}>
+                  {clasificacion.texto}
+                </Basura>
+         })
+        }
+      </div>
+    );
+  }
+}
+
+module.exports = Clasificacion;

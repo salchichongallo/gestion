@@ -1,0 +1,7 @@
+{
+  "name": "Imagenes",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Imagenes.jsx",
+  "description": "Vista donde se muestran las imágenes"
+}

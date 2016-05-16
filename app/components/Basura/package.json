@@ -1,0 +1,7 @@
+{
+  "name": "Basura",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Basura.jsx",
+  "description": "Clasifica la basura por su tipo"
+}

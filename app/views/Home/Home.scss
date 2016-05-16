@@ -1,0 +1,25 @@
+@import "button";
+
+.root {
+  padding: 30px;
+  text-align: center;
+  font-family: Raleway;
+
+  img {
+    width: 30%;
+  }
+
+  h1, h3 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  h2, h3 {
+    padding-bottom: 16px;
+     /*letter-spacing: .1em;*/
+  }
+
+  h1 {
+    letter-spacing: .7em;
+  }
+}

@@ -1,0 +1,37 @@
+$altura-header: 192px;
+$duracion-animacion: 500ms;
+
+.container {
+  display: flex;
+  position:relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  width: 100%;
+  display: block;
+  height: $altura-header;
+  position: absolute;
+  background-color: rgb(66, 165, 245);
+  animation-duration: $duracion-animacion;
+}
+
+.fade {
+  animation-delay: $duracion-animacion;
+  animation-duration: $duracion-animacion;
+}
+
+.app {
+  width: 800px;
+  border-radius: 3px;
+  background-color: white;
+  margin-top: $altura-header / 2;
+  animation-duration: $duracion-animacion;
+}
+
+@media (max-width: 816px) {
+  .app {
+    width: 98%;
+  }
+}

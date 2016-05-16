@@ -1,0 +1,79 @@
+@import 'globals';
+
+.root {
+  width: 100%;
+  color: white;
+  padding: 45px;
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+
+  display: flex;
+  align-items: center;
+
+  .icono {
+    font-size: 33px !important;
+  }
+
+  &[color="verde"] {
+    background-color: $verde;
+    border-color: darken($verde, 20%);
+
+    &:hover {
+      background-color: darken($verde, 10%);
+    }
+  }
+  &[color="gris"] {
+    background-color: $gris;
+    border-color: darken($gris, 20%);
+
+    &:hover {
+      background-color: darken($gris, 10%);
+    }
+  }
+  &[color="azul"] {
+    background-color: $azul;
+    border-color: darken($azul, 20%);
+
+    &:hover {
+      background-color: darken($azul, 10%);
+    }
+  }
+  &[color="rojo"] {
+    background-color: $rojo;
+    border-color: darken($rojo, 20%);
+
+    &:hover {
+      background-color: darken($rojo, 10%);
+    }
+  }
+  &[color="blanco"] {
+    color: #212121;
+    background-color: white;
+    border-color: lighten(#212121, 60%);
+
+    &:hover {
+      background-color: #F6F6F6;
+    }
+  }
+  &[color="cafe"] {
+    background-color: $cafe;
+    border-color: darken($cafe, 20%);
+
+    &:hover {
+      background-color: darken($cafe, 10%);
+    }
+  }
+  &[color="beige"] {
+    background-color: $beige;
+    border-color: darken($beige, 20%);
+
+    &:hover {
+      background-color: darken($beige, 10%);
+    }
+  }
+}

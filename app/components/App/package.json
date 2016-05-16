@@ -1,0 +1,7 @@
+{
+  "name": "App",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./App.jsx",
+  "description": "Plantilla base, react-router la utiliza como punto de entrada para las vistas."
+}

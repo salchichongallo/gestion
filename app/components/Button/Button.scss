@@ -1,0 +1,11 @@
+$tamano: 120px;
+$borde: calc(#{$tamano} * .15);
+
+.root {
+  display: inline-block;
+  width: $tamano;
+  height: $tamano;
+  border-radius: 50%;
+  background-color: #2dcc70;
+  border: $borde solid lighten(#2dcc70, 30%);
+}

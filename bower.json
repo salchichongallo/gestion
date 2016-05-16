@@ -1,0 +1,24 @@
+{
+  "name": "gestion",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "salchichongallo <salchichongallo1997@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/salchichongallo/gestionAmbiental",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "polymer": "Polymer/polymer#^1.4.0",
+    "paper-fab": "PolymerElements/paper-fab#^1.2.0",
+    "paper-material": "PolymerElements/paper-material#^1.0.6",
+    "iron-image": "PolymerElements/iron-image#^1.2.3"
+  }
+}
