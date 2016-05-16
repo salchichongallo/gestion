@@ -1,19 +1,19 @@
 $altura-header: 192px;
 $duracion-animacion: 500ms;
 
-.container {
+.container { 
   display: flex;
   position:relative;
-  align-items: center;
+  align-items: center; 
   justify-content: center;
-}
+} 
 
 .header {
   width: 100%;
   display: block;
   height: $altura-header;
   position: absolute;
-  background-color: rgb(66, 165, 245);
+  background-color: #336F7A;
   animation-duration: $duracion-animacion;
 }
 

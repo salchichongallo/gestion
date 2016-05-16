@@ -6,8 +6,9 @@ $borde: calc(#{$tamano} * .15);
 .button {
   width: $tamano;
   height: $tamano;
-  border-radius: 50%;
+  border-radius: 50%; 
   display: inline-block;
+  opacity: .6;
 
   &[color="verde"] {
     background-color: $verde;
