@@ -2,11 +2,11 @@
 if(typeof require.ensure !== "function") require.ensure = function(d, c) { c(require) };
 
 module.exports = {
-  path: 'demo',
+  path: 'conciencia',
 
   getComponent(nextState, cb) {
     require.ensure([], (require) => {
-      cb(null, require('./components/Demo'));
+      cb(null, require('./components/Conciencia.jsx'));
     })
   }
 }

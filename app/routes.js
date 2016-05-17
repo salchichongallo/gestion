@@ -3,7 +3,6 @@ import { Router, Route } from 'react-router';
 
 import App from './components/App';
 import Home from './views/Home';
-import Demo from './views/Demo';
 
 export default {
   childRoutes: [
@@ -14,11 +13,12 @@ export default {
         component: Home
       },
       childRoutes: [
-        require('./views/Demo'),
         require('./views/Imagenes'),
         require('./views/Triste'),
         require('./views/Genial'),
         require('./views/Clasificacion'),
+        require('./views/Conciencia'),
+        require('./views/Estadisticas'),
       ]
     }
   ]

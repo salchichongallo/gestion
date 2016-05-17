@@ -1,12 +1,12 @@
 $altura-header: 192px;
 $duracion-animacion: 500ms;
 
-.container { 
+.container {
   display: flex;
   position:relative;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
-} 
+}
 
 .header {
   width: 100%;
@@ -32,6 +32,6 @@ $duracion-animacion: 500ms;
 
 @media (max-width: 816px) {
   .app {
-    width: 98%;
+    width: 88%;
   }
 }

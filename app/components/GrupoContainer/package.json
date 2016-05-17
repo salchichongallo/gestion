@@ -1,0 +1,7 @@
+{
+  "name": "GrupoContainer",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./GrupoContainer.jsx",
+  "description": "Grupo container"
+}

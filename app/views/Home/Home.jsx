@@ -11,7 +11,7 @@ export default class Home extends React.Component {
     return (
       <div className={s.root}>
 
-        <img src={earth} alt="Earth" />
+        <object type="image/svg+xml" data={earth}></object>
         <h1>SGCA</h1>
 
         <h2>Sistema de gestión de conciencia ambiental</h2>

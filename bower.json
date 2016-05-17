@@ -1,9 +1,10 @@
 {
   "name": "gestion",
-  "description": "",
-  "main": "index.js",
+  "description": "Proyecto final gestión ambiental",
+  "main": "",
   "authors": [
-    "salchichongallo <salchichongallo1997@gmail.com>"
+    "salchichongallo <salchichongallo1997@gmail.com>",
+    "stivsk <yeiksite2@gmail.com>",
   ],
   "license": "MIT",
   "homepage": "https://github.com/salchichongallo/gestionAmbiental",
@@ -20,6 +21,7 @@
     "paper-fab": "PolymerElements/paper-fab#^1.2.0",
     "paper-material": "PolymerElements/paper-material#^1.0.6",
     "iron-image": "PolymerElements/iron-image#^1.2.3",
-    "paper-ripple": "PolymerElements/paper-ripple#^1.0.5"
+    "paper-ripple": "PolymerElements/paper-ripple#^1.0.5",
+    "paper-toolbar": "^1.1.4"
   }
 }
