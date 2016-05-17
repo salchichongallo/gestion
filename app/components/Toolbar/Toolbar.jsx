@@ -12,7 +12,7 @@ export default class Toolbar extends React.Component {
           <Link to='/'>
             <img className={s.logo} src={earth} />
 
-            <span className={s.title}>SGCA - </span>
+            <span className={s.title}>SGCA</span>
           </Link>
 
           <span className={s.subtitle}>{this.props.subtitle}</span>

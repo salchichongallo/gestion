@@ -2,7 +2,7 @@ $altura: 64px;
 
 .root {
   height: $altura;
-  font-size: 24px;
+  font-size: 18px;
   border-bottom: 1px solid #B6B6B6;
   box-sizing: border-box;
 
@@ -22,8 +22,9 @@ $altura: 64px;
 
   .subtitle {
     color: #727272;
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 400;
+    letter-spacing: 3px;
   }
 
   a {margin: 0 !important; }
