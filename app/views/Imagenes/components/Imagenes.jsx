@@ -48,6 +48,10 @@ class Imagenes extends React.Component {
       console.log('Iguales');
     }
   }
+          // <div>Buenas: {this.state.buenas}</div>
+          // <div>Malas: {this.state.malas}</div>
+          // <div>Total seleccionadas: {this.state.seleccionadas}</div>
+          // <div>Total imagenes: {this.state.total}</div>
 
   render() {
     return (
@@ -56,10 +60,6 @@ class Imagenes extends React.Component {
         <Toolbar subtitle="Selecciona la imagen que más te guste" />
 
         <main>
-          <div>Buenas: {this.state.buenas}</div>
-          <div>Malas: {this.state.malas}</div>
-          <div>Total seleccionadas: {this.state.seleccionadas}</div>
-          <div>Total imagenes: {this.state.total}</div>
 
           { images.map(img => {
               return <Imagen onClick={this.acumular} key={img.title} {...img} />

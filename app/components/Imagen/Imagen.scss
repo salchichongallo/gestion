@@ -1,7 +1,7 @@
 @import 'globals';
 
 .root {
-  margin: 8px;
+  /*margin: 8px;*/
   position: relative;
   display: inline-block;
   box-sizing: border-box;
@@ -12,7 +12,7 @@
   z-index: 1;
   width: 220px;
   height: 260px;
-  // background: #c4eff6;
+  background: white;
 }
 
 .buena, .mala {

@@ -17,6 +17,7 @@ export default {
         require('./views/Demo'),
         require('./views/Imagenes'),
         require('./views/Triste'),
+        require('./views/Genial'),
         require('./views/Clasificacion'),
       ]
     }
