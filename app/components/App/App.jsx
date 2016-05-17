@@ -1,6 +1,5 @@
 import React from 'react';
 
-// import image from './img/1.jpg';
 import s from './App.scss';
 
 export default class App extends React.Component {
@@ -20,6 +19,7 @@ export default class App extends React.Component {
             </div>
           </paper-material>
         </div>
+
       </div>
     );
   }

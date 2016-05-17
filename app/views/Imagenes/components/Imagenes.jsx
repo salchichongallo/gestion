@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 
 import Toolbar from '../../../components/Toolbar';
+import Imagen from '../../../components/Imagen';
 
 import s from './Imagenes.scss';
 import images from './images.js';
@@ -10,28 +11,41 @@ class Imagenes extends React.Component {
   constructor(props) {
     super(props);
 
+    this.acumular = this.acumular.bind(this);
+
     this.state = {
       malas: 0,
       buenas: 0,
       seleccionadas: 0,
-      totalImagenes: images.length,
+      total: images.length,
     }
   }
 
-  _calcularSeleccionadas() {
-    let seleccionadas = this.state.buenas + this.state.malas;
-    this.setState({seleccionadas});
+  acumular(sumar, contamina) {
+    var changes = {};
+
+    if (contamina) {
+      if (sumar)
+        changes = {malas: this.state.malas+1};
+      else
+        changes = {malas: this.state.malas-1};
+    } else {
+      if (sumar)
+        changes = {buenas: this.state.buenas+1};
+      else
+        changes = {buenas: this.state.buenas-1};
+    }
+    this.setState(changes, this._recalculo);
   }
 
-  _acumular(contamina) {
-    if (this.state.seleccionadas < this.state.totalImagenes) {
-      if (contamina) {
-        this.setState({malas: this.state.malas+1} , this._calcularSeleccionadas);
-      } else {
-        this.setState({buenas: this.state.buenas+1}, this._calcularSeleccionadas);
-      }
-    } else {
-      console.log('Total seleccionadas llena');
+  _recalculo() {
+    let seleccionadas = this.state.buenas + this.state.malas;
+    this.setState({seleccionadas}, this._comprobarSeleccionadas);
+  }
+
+  _comprobarSeleccionadas() {
+    if (this.state.total === this.state.seleccionadas) {
+      console.log('Iguales');
     }
   }
 
@@ -45,19 +59,10 @@ class Imagenes extends React.Component {
           <div>Buenas: {this.state.buenas}</div>
           <div>Malas: {this.state.malas}</div>
           <div>Total seleccionadas: {this.state.seleccionadas}</div>
-          <div>Total imagenes: {this.state.totalImagenes}</div>
+          <div>Total imagenes: {this.state.total}</div>
 
-          {
-            images.map(img => {
-              return (
-                <iron-image onClick={this._acumular.bind(this, img.contamina)}
-                  data-contamina={s.contamina} class={s.imagen}
-                  src={img.src} title={img.title}
-                  preload fade sizin="contain"
-                  key={img.title}>
-
-                </iron-image>
-              )
+          { images.map(img => {
+              return <Imagen onClick={this.acumular} key={img.title} {...img} />
             })
           }
         </main>

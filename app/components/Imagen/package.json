@@ -1,0 +1,7 @@
+{
+  "name": "Imagen",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Imagen.jsx",
+  "description": "Imagen"
+}

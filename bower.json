@@ -19,6 +19,7 @@
     "polymer": "Polymer/polymer#^1.4.0",
     "paper-fab": "PolymerElements/paper-fab#^1.2.0",
     "paper-material": "PolymerElements/paper-material#^1.0.6",
-    "iron-image": "PolymerElements/iron-image#^1.2.3"
+    "iron-image": "PolymerElements/iron-image#^1.2.3",
+    "paper-ripple": "PolymerElements/paper-ripple#^1.0.5"
   }
 }
