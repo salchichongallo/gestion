@@ -12,7 +12,7 @@ class Zonas extends React.Component {
 
         <Toolbar link='/encuesta' subtitle="Zonas y frecuencias de recolección" icon="trending_up" />
 
-        <img src={imagen} />
+        <iron-image src={imagen} preload fade className={s.zonas}></iron-image>
       </div>
     );
   }
