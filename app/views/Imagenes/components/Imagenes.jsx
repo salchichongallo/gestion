@@ -97,7 +97,7 @@ class Imagenes extends React.Component {
 
     return (
       <div className={s.root}>
-        <Toolbar subtitle="Selecciona la imagen que más te guste" />
+        <Toolbar link='#' subtitle="Selecciona la imagen que más te guste" />
 
         <main>
           { grupos.map(grupo => {

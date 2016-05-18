@@ -16,6 +16,11 @@ export default class Toolbar extends React.Component {
           </Link>
 
           <span className={s.subtitle}>{this.props.subtitle}</span>
+
+
+          <Link to={this.props.link}>
+            <i className="material-icons">{this.props.icon}</i>
+          </Link>
         </div>
       </div>
     );

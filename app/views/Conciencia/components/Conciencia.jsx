@@ -12,13 +12,21 @@ class Conciencia extends React.Component {
         <object type="image/svg+xml" data={earth}></object>
         <h1>SGCA</h1>
 
-        <h2>Ya no hay excusas</h2>
+        <h2 className={s.texto}>
+          Ya no hay excusas
+          <br />
+          <span className={s.verde}>El cambio está en tí</span>
+          <br />
+          Tu comunidad, Medellín y el mundo
+          <br />
+          <span className={s.verde}>Cuentan con vos</span>
+        </h2>
 
-        <Link to="imagenes">
+        <Link to="/">
           <paper-fab color="verde" raised class={s.button}></paper-fab>
         </Link>
 
-        <h3>Presiona para concientizarte</h3>
+        <h3>Inicio</h3>
       </div>
     );
   }

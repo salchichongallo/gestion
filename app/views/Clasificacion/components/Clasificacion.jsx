@@ -16,7 +16,7 @@ class Clasificacion extends React.Component {
         <h1>¿Te gustan las basuras?</h1>
         <h2>Seguro que no</h2>
         <h3>¡Pero a ellos si!</h3>
- 
+
         {
          clasificaciones.map(clasificacion => {
           return <Basura key={clasificacion.color} color={clasificacion.color}>
@@ -24,6 +24,9 @@ class Clasificacion extends React.Component {
                 </Basura>
          })
         }
+
+        <Link to='/zonas'>Zonas</Link>
+
       </div>
     );
   }

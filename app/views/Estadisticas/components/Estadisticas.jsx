@@ -5,15 +5,15 @@ import Toolbar from '../../../components/Toolbar';
 
 import s from './Estadisticas.scss';
 
+import imagen from './estadisticas.png';
+
 class Estadisticas extends React.Component {
   render() {
     return (
       <div className={s.root}>
-        <Toolbar subtitle="Selecciona la imagen que más te guste" />
+        <Toolbar link='/conciencia' subtitle="Estadísticas" icon='home' />
 
-        <main>
-
-        </main>
+          <img src={imagen} />
       </div>
     );
   }

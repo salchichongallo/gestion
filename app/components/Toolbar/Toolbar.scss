@@ -3,6 +3,7 @@ $altura: 64px;
 .root {
   height: $altura;
   font-size: 18px;
+  position: relative;
   border-bottom: 1px solid #B6B6B6;
   box-sizing: border-box;
 
@@ -34,5 +35,21 @@ $altura: 64px;
     display: flex;
     margin-left: 30px;
     align-items: center;
+  }
+
+  i {
+    right: 0;
+    padding: 5px;
+    color: #2DBA72;
+    cursor: pointer;
+    position: absolute;
+    align-self: center;
+    border-radius: 50%;
+    margin: 15px 25px 20px 20px;
+    transition: background .3s linear;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.12);
+    }
   }
 }

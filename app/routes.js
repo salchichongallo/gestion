@@ -18,7 +18,9 @@ export default {
         require('./views/Genial'),
         require('./views/Clasificacion'),
         require('./views/Conciencia'),
+        require('./views/Encuesta'),
         require('./views/Estadisticas'),
+        require('./views/Zonas'),
       ]
     }
   ]
