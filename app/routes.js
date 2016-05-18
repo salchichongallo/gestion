@@ -21,6 +21,7 @@ export default {
         require('./views/Encuesta'),
         require('./views/Estadisticas'),
         require('./views/Zonas'),
+        require('./views/Soluciones'),
       ]
     }
   ]

@@ -11,7 +11,7 @@ class Estadisticas extends React.Component {
   render() {
     return (
       <div className={s.root}>
-        <Toolbar link='/conciencia' subtitle="Estadísticas" icon='home' />
+        <Toolbar link='/soluciones' subtitle="Estadísticas" icon='home' />
 
           <img src={imagen} />
       </div>
