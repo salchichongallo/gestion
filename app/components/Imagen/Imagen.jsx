@@ -31,7 +31,7 @@ export default class Imagen extends React.Component {
     return (
       <div className={estilos} onClick={this._toggle}>
         <div className={s.seleccionada}>
-          <paper-ripple></paper-ripple>
+          <paper-ripple recenters></paper-ripple>
         </div>
         <iron-image class={s.imagen} refs={this.props.title}
           src={this.props.src} preload
